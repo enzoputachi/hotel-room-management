@@ -81,4 +81,4 @@ Request validation is handled using `express-validator` middleware. Validation r
 
 #### Contributing
 
-Contributions are welcome! Please feel free to submit pull requests.
+Contributions are welcome!
