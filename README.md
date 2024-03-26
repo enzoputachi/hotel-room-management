@@ -2,7 +2,7 @@
 
 This is a simple Room Management System built with Node.js, Express, and MongoDB. It provides API endpoints to manage different room types and rooms within a facility.
 
-### Getting Started
+## Getting Started
 
 To get started with this project, follow these steps:
 
