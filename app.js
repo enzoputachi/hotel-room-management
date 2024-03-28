@@ -8,16 +8,16 @@ const roomRoutes = require('./routes/roomRoutes');
 const { validateRequest } = require('./middlewares/validation');
 
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4050;
 const MONGODB_URI = process.env.MONGODB_URI;   
 
 // Middleware
 app.use(express.json());
 
 // Routes
-app.get('/', (req, res) => {
-    res.send('Hello, world! This is the root route.');
-});
+// app.get('/', (req, res) => {
+//     res.send('Hello, world! This is the root route.');
+// });
 
 app.use('/api/v1/room-types', validateRequest, roomTypeRoutes);
 app.use('/api/v1/rooms', validateRequest, roomRoutes);
