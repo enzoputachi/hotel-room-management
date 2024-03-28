@@ -19,8 +19,8 @@ app.use(express.json());
 //     res.send('Hello, world! This is the root route.');
 // });
 
-app.use('/api/v1/room-types', validateRequest, roomTypeRoutes);
-app.use('/api/v1/rooms', validateRequest, roomRoutes);
+app.use('/', validateRequest, roomTypeRoutes);
+app.use('/', validateRequest, roomRoutes);
 
 // Connect to MongoDB and start server
 mongoose.connect(MONGODB_URI)
