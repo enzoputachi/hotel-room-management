@@ -15,6 +15,10 @@ const MONGODB_URI = process.env.MONGODB_URI;
 app.use(express.json());
 
 // Routes
+app.get('/', (req, res) => {
+    res.send('Hello, world! This is the root route.');
+});
+
 app.use('/api/v1/room-types', validateRequest, roomTypeRoutes);
 app.use('/api/v1/rooms', validateRequest, roomRoutes);
 
